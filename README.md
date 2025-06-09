@@ -25,7 +25,7 @@ Dataset sources: [FakeNewsCorpus](https://github.com/several27/FakeNewsCorpus)
 [WELFake](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 [LIAR](https://www.kaggle.com/datasets/doanquanvietnamca/liar-dataset)
 
-## ⚙️ Approach
+## Approach
 
 This is a **binary classification** task using supervised learning. The pipeline includes:
 
