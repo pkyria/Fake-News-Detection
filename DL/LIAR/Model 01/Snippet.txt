@@ -1,0 +1,25 @@
+# Tokenizing text
+vocab = 20000
+tokenizer = Tokenizer(num_words= vocab)
+tokenizer.fit_on_texts(X_train)
+
+# Text to sequences
+X_train_sequences = tokenizer.texts_to_sequences(X_train)
+X_test_sequences = tokenizer.texts_to_sequences(X_test)
+
+# Padding
+X_train_padded = pad_sequences(X_train_sequences, maxlen=256)
+X_test_padded = pad_sequences(X_test_sequences, maxlen=256)
+
+model = Sequential()
+model.add(Embedding(vocab, 128))
+model.add(Bidirectional(LSTM(100)))
+model.add(Dropout(0.1))
+model.add(Dense(1, activation='sigmoid'))
+
+
+#earlystop = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=2, restore_best_weights=True) Bug me val_loss
+
+# Compile
+model.compile(optimizer='Nadam', loss='binary_crossentropy', metrics=['accuracy'])
+print(model.summary())
