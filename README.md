@@ -55,6 +55,8 @@ This is a **binary classification** task using supervised learning. The pipeline
 <img width="1418" height="744" alt="image" src="https://github.com/user-attachments/assets/9cbab1b2-383f-4450-a81e-93e76ba2c332" />
 <img width="1584" height="140" alt="image" src="https://github.com/user-attachments/assets/c617f712-c53f-48c4-b255-cc52b1e8064d" />
 <img width="1271" height="156" alt="image" src="https://github.com/user-attachments/assets/aec5be30-ef34-4809-b76e-65014298b3b4" />
+<img width="1250" height="89" alt="image" src="https://github.com/user-attachments/assets/77ac592a-2b0b-4d0a-bef1-78ecd863553d" />
+
 
 
 
